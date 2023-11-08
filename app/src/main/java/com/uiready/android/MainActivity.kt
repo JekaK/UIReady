@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import com.uiready.android.ui.theme.UIReadyTheme
+import com.uiready.android.R
 import com.uiready.splashscreen.SplashScreen
 
 class MainActivity : ComponentActivity() {
