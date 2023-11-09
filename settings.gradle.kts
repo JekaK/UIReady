@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "UIReady"
 include(":app")
 include(":splashscreen")
+include(":navigation")
