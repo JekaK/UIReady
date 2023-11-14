@@ -1,2 +1,5 @@
 jdk:
   - openjdk18
+include:
+  - navigation
+  - splashscreen
