@@ -60,7 +60,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.uiready"
-            artifactId = "uiready.splashscreen"
+            artifactId = "splashscreen"
             version = "0.0.1"
 
             afterEvaluate {

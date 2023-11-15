@@ -61,7 +61,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.uiready"
-            artifactId = "uiready.navigation"
+            artifactId = "navigation"
             version = "0.0.1"
 
             afterEvaluate {
