@@ -55,10 +55,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
+
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.uiready.splashscreen"
+            groupId = "com.github.uiready"
             artifactId = "uiready.splashscreen"
             version = "0.0.1"
 

@@ -64,8 +64,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.4")
     implementation("androidx.navigation:navigation-compose:2.7.5")
+    implementation("androidx.compose.ui:ui-tooling-preview")
 
-    implementation(project(mapOf("path" to ":splashscreen")))
-    implementation(project(mapOf("path" to ":navigation")))
+    implementation("com.github.jekak:uiready.navigation:0.0.1")
+
+//    implementation(project(mapOf("path" to ":splashscreen")))
+//    implementation(project(mapOf("path" to ":navigation")))
 
 }

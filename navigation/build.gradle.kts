@@ -60,7 +60,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.uiready.navigation"
+            groupId = "com.github.uiready"
             artifactId = "uiready.navigation"
             version = "0.0.1"
 
