@@ -4,6 +4,13 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.9.10" apply false
     id("com.android.library") version "8.1.2" apply false
 }
-repositories {
-    google()
+
+buildscript {
+    repositories {
+        google()
+    }
+
+    dependencies {
+        classpath ("com.android.tools.build:gradle:8.1.3")
+    }
 }
