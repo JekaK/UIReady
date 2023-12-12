@@ -1,6 +1,5 @@
 package com.uiready.navigation.manager
 
-import com.uiready.navigation.NavContainer
 import com.uiready.navigation.NavRoute
 import com.uiready.navigation.NavigationEvents
 import kotlinx.coroutines.flow.Flow
@@ -12,18 +11,12 @@ import kotlinx.coroutines.flow.Flow
  * and managing the navigation container.
  *
  * @property navigationFlow A [Flow] of [NavigationEvents] that represents the navigation events in the application.
- * @property navContainer The container that holds the defined navigation routes.
  */
 interface NavigationManager {
     /**
      * A [Flow] of navigation events, such as navigation back or navigating to a specific route.
      */
     val navigationFlow: Flow<NavigationEvents>
-
-    /**
-     * The container holding the defined navigation routes.
-     */
-    val navContainer: NavContainer
 
     /**
      * Navigate back to a specific route in the navigation stack.
@@ -35,6 +28,13 @@ interface NavigationManager {
         route: NavRoute,
         inclusive: Boolean = false
     )
+
+    /**
+     * Navigate back in the navigation stack.
+     *
+     * @param inclusive Whether to include the current route in the back navigation stack.
+     */
+    suspend fun navigateBack(inclusive: Boolean = false)
 
     /**
      * Navigate to a specific route in the navigation stack.

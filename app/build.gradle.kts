@@ -66,8 +66,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.5")
     implementation("androidx.compose.ui:ui-tooling-preview")
 
-//    implementation("com.github.JekaK.UIReady:uiready.navigation:0.0.4")
-//    implementation("com.github.JekaK.UIReady:uiready.splashscreen:0.0.4")
+//    implementation("com.github.JekaK.UIReady:navigation:0.0.5")
+//    implementation("com.github.JekaK.UIReady:splashscreen:0.0.5")
 
     implementation(project(mapOf("path" to ":splashscreen")))
     implementation(project(mapOf("path" to ":navigation")))
